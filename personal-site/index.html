@@ -12,18 +12,22 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script src="https://unpkg.com/lottie-web@5.7.6/build/player/lottie.min.js"></script>
 	</head>
 	<body class="is-preload">
 
 		<!-- Header -->
 			<section id="header">
 				<div class="inner">
+					<div id="lottie-animation" style="width: 300px; height: 300px; margin: 0 auto;"></div>
+					
 					<i class="fa-solid fa-mug-saucer fa-2x"></i>
-					<h1>Hi, I'm <strong>Yash Gupta</strong>,<br />
-					</h1>
-					<p>a passionate and dedicated 3rd year BTech IT student specializing in Data Science at USICT.<br/> 
+					<h1>Hi, I'm <strong>Yash Gupta</strong>,<br /></h1>
+					<p>
+						A passionate and dedicated 3rd year BTech IT student specializing in Data Science at USICT.<br/> 
 						With a strong foundation in data analytics, machine learning, and AI, <br/> 
-						I thrive on leveraging technology to solve real-world problems.</p>
+						I thrive on leveraging technology to solve real-world problems.
+					</p>
 					<ul class="actions special">
 						<li><a href="#one" class="button scrolly">Discover</a></li>
 					</ul>
@@ -548,6 +552,15 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+		        <script>
+				lottie.loadAnimation({
+				container: document.getElementById('lottie-animation'), // container ID
+				renderer: 'svg',
+				loop: true,
+				autoplay: true,
+				path: 'https://assets3.lottiefiles.com/packages/lf20_x62chJ.json' // sample 3D tech animation
+			});
+			</script>
 
 	</body>
 </html>
