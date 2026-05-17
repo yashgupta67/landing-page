@@ -9,7 +9,7 @@
     <title>Yash Gupta | AI Engineer Portfolio</title>
 
     <meta name="description"
-        content="Yash Gupta - AI Engineer, GenAI Developer, Data Science Enthusiast Portfolio" />
+        content="Yash Gupta - AI Engineer, GenAI Developer, Data Scientist Portfolio" />
 
     <!-- GOOGLE FONT -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
@@ -42,7 +42,7 @@
             position: fixed;
             width: 500px;
             height: 500px;
-            background: rgba(124, 58, 237, 0.18);
+            background: rgba(139, 92, 246, 0.15);
             border-radius: 50%;
             filter: blur(140px);
             top: -100px;
@@ -53,9 +53,9 @@
         body::after {
             content: '';
             position: fixed;
-            width: 450px;
-            height: 450px;
-            background: rgba(59, 130, 246, 0.18);
+            width: 500px;
+            height: 500px;
+            background: rgba(59, 130, 246, 0.15);
             border-radius: 50%;
             filter: blur(140px);
             bottom: -100px;
@@ -76,13 +76,13 @@
             left: 0;
             z-index: 1000;
 
-            padding: 18px 8%;
-
             display: flex;
             justify-content: space-between;
             align-items: center;
 
-            background: rgba(5, 8, 22, 0.75);
+            padding: 18px 8%;
+
+            background: rgba(5, 8, 22, 0.8);
             backdrop-filter: blur(15px);
 
             border-bottom: 1px solid rgba(255, 255, 255, 0.08);
@@ -91,7 +91,7 @@
         .nav-left {
             display: flex;
             align-items: center;
-            gap: 18px;
+            gap: 16px;
         }
 
         .header-lottie {
@@ -102,20 +102,20 @@
         .coffee-box {
             width: 42px;
             height: 42px;
+
             border-radius: 50%;
 
             display: flex;
             justify-content: center;
             align-items: center;
 
-            background: rgba(255, 255, 255, 0.06);
+            background: rgba(255, 255, 255, 0.05);
 
             border: 1px solid rgba(255, 255, 255, 0.08);
         }
 
         .coffee-box i {
             color: #8b5cf6;
-            font-size: 1rem;
         }
 
         .logo {
@@ -125,15 +125,14 @@
 
         .nav-links {
             display: flex;
-            align-items: center;
             gap: 28px;
+            align-items: center;
         }
 
         .nav-links a {
             text-decoration: none;
             color: #dbe4f0;
             transition: 0.3s;
-            font-size: 0.95rem;
             font-weight: 500;
         }
 
@@ -170,18 +169,18 @@
         }
 
         .hero-text h2 {
-            font-size: 1.3rem;
             color: #94a3b8;
+            font-size: 1.3rem;
             margin-bottom: 25px;
             font-weight: 500;
         }
 
         .hero-text p {
-            color: #dbe4f0;
             line-height: 2;
+            color: #dbe4f0;
             margin-bottom: 40px;
-            max-width: 700px;
             font-size: 1.05rem;
+            max-width: 700px;
         }
 
         .hero-buttons {
@@ -251,11 +250,12 @@
             overflow: hidden;
 
             background: rgba(255, 255, 255, 0.04);
+
             border: 1px solid rgba(255, 255, 255, 0.08);
 
-            backdrop-filter: blur(15px);
-
             box-shadow: 0 0 60px rgba(139, 92, 246, 0.25);
+
+            backdrop-filter: blur(15px);
         }
 
         .hero-card img {
@@ -281,12 +281,14 @@
             margin-bottom: 70px;
         }
 
-        /* GLASS CARD */
+        /* GLASS */
 
         .glass-card {
             background: rgba(255, 255, 255, 0.05);
+
             border-radius: 28px;
-            padding: 45px;
+
+            padding: 40px;
 
             border: 1px solid rgba(255, 255, 255, 0.08);
 
@@ -298,6 +300,24 @@
         .glass-card:hover {
             transform: translateY(-10px);
             border-color: rgba(139, 92, 246, 0.5);
+        }
+
+        /* STATS */
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 30px;
+        }
+
+        .stat-card {
+            text-align: center;
+        }
+
+        .stat-card h2 {
+            font-size: 3rem;
+            color: #8b5cf6;
+            margin-bottom: 10px;
         }
 
         /* ABOUT */
@@ -317,7 +337,6 @@
             font-size: 1.1rem;
             line-height: 2;
             color: #dbe4f0;
-
             max-width: 900px;
             margin: auto;
             margin-bottom: 55px;
@@ -341,14 +360,13 @@
             color: #cbd5e1;
         }
 
-        /* EDUCATION / SKILLS / PROJECTS */
+        /* EDUCATION */
 
         .education-grid,
         .skills-grid,
-        .projects-grid,
-        .stats-grid {
+        .projects-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
             gap: 30px;
         }
 
@@ -356,6 +374,8 @@
             color: #8b5cf6;
             margin-bottom: 20px;
         }
+
+        /* SKILLS */
 
         .skill-card i {
             font-size: 2rem;
@@ -378,8 +398,9 @@
         .timeline-item {
             background: rgba(255, 255, 255, 0.05);
 
-            padding: 40px;
             border-left: 4px solid #8b5cf6;
+
+            padding: 40px;
 
             border-radius: 20px;
         }
@@ -415,33 +436,60 @@
             margin-bottom: 15px;
         }
 
+        .project-content p {
+            line-height: 1.8;
+        }
+
+        .project-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 25px;
+            flex-wrap: wrap;
+        }
+
+        .project-links a {
+            text-decoration: none;
+            padding: 10px 18px;
+            border-radius: 12px;
+            font-size: 0.9rem;
+            transition: 0.3s;
+        }
+
+        .github-btn {
+            background: #8b5cf6;
+            color: white;
+        }
+
+        .live-btn {
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            color: white;
+        }
+
+        .project-links a:hover {
+            transform: translateY(-4px);
+        }
+
         .project-tags {
             display: flex;
-            flex-wrap: wrap;
             gap: 10px;
+            flex-wrap: wrap;
             margin-top: 20px;
         }
 
         .project-tags span {
             padding: 8px 14px;
             border-radius: 999px;
-
             background: rgba(139, 92, 246, 0.15);
             color: #c4b5fd;
-
             font-size: 0.85rem;
         }
 
-        /* STATS */
+        /* CONTACT */
 
-        .stat-card {
+        .contact-box {
+            max-width: 900px;
+            margin: auto;
             text-align: center;
-        }
-
-        .stat-card h2 {
-            font-size: 3rem;
-            color: #8b5cf6;
-            margin-bottom: 10px;
         }
 
         /* FOOTER */
@@ -454,7 +502,7 @@
         }
 
         footer p {
-            margin-top: 25px;
+            margin-top: 20px;
             color: #cbd5e1;
         }
 
@@ -540,19 +588,19 @@
             </h1>
 
             <h2>
-                AI Engineer • GenAI Builder • Data Science Enthusiast
+                AI Engineer • GenAI Developer • Data Scientist
             </h2>
 
             <p>
-                B.Tech IT Graduate from USICT with an 8.47 CGPA,
-                specializing in Generative AI, Machine Learning,
-                AI Agents, NLP, RAG Systems, and intelligent automation.
+                B.Tech IT Graduate from USICT with 8.47 CGPA specializing in
+                Generative AI, Machine Learning, RAG Systems, AI Agents,
+                NLP, Intelligent Automation, and Data Science.
             </p>
 
             <div class="hero-buttons">
 
                 <a href="#projects" class="btn primary-btn">
-                    Discover
+                    Discover Projects
                 </a>
 
                 <a href="RESUME_YASHG.pdf"
@@ -565,7 +613,8 @@
 
             <div class="socials">
 
-                <a href="https://github.com/yashgupta67" target="_blank">
+                <a href="https://github.com/yashgupta67"
+                    target="_blank">
                     <i class="fab fa-github"></i>
                 </a>
 
@@ -600,6 +649,56 @@
 
     </section>
 
+    <!-- STATS -->
+
+    <section>
+
+        <div class="stats-grid">
+
+            <div class="glass-card stat-card">
+
+                <h2>6+</h2>
+
+                <p>
+                    Internships & Experiences
+                </p>
+
+            </div>
+
+            <div class="glass-card stat-card">
+
+                <h2>25+</h2>
+
+                <p>
+                    AI & Data Science Projects
+                </p>
+
+            </div>
+
+            <div class="glass-card stat-card">
+
+                <h2>8.47</h2>
+
+                <p>
+                    B.Tech CGPA
+                </p>
+
+            </div>
+
+            <div class="glass-card stat-card">
+
+                <h2>10+</h2>
+
+                <p>
+                    AI Technologies & Frameworks
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
     <!-- ABOUT -->
 
     <section id="about">
@@ -609,7 +708,7 @@
         </h2>
 
         <p class="section-subtitle">
-            AI Engineer focused on building scalable intelligent systems and modern GenAI applications.
+            Passionate about building intelligent AI systems and next-generation applications.
         </p>
 
         <div class="about-wrapper">
@@ -617,14 +716,16 @@
             <div class="glass-card">
 
                 <h2 class="about-main-title">
-                    Passionate About AI, GenAI & Intelligent Systems
+                    AI Engineer Focused on Real-World Innovation
                 </h2>
 
                 <p class="about-para">
 
-                    I specialize in building AI-powered applications,
-                    RAG pipelines, AI agents, machine learning systems,
-                    and enterprise automation solutions that solve real-world problems.
+                    I work on AI-powered systems including RAG pipelines,
+                    AI agents, NLP systems, intelligent automation,
+                    data science applications, and enterprise AI solutions.
+                    My focus is on combining modern AI with scalable engineering
+                    to build impactful products.
 
                 </p>
 
@@ -632,7 +733,7 @@
 
                     <div>
 
-                        <h3>Specializations</h3>
+                        <h3>Core Domains</h3>
 
                         <ul>
                             <li>Generative AI & LLMs</li>
@@ -645,12 +746,12 @@
 
                     <div>
 
-                        <h3>Technologies</h3>
+                        <h3>Tech Stack</h3>
 
                         <ul>
                             <li>Python, SQL, LangChain</li>
                             <li>TensorFlow & PyTorch</li>
-                            <li>Flask, Streamlit, FastAPI</li>
+                            <li>Flask, FastAPI, Streamlit</li>
                             <li>Spark, Tableau, Power BI</li>
                         </ul>
 
@@ -658,13 +759,13 @@
 
                     <div>
 
-                        <h3>Highlights</h3>
+                        <h3>Achievements</h3>
 
                         <ul>
                             <li>B.Tech IT Graduate - USICT</li>
                             <li>8.47 CGPA</li>
-                            <li>AI/Data Science Internships</li>
-                            <li>Enterprise AI System Development</li>
+                            <li>97% in Class 10</li>
+                            <li>93% in Class 12</li>
                         </ul>
 
                     </div>
@@ -686,7 +787,7 @@
         </h2>
 
         <p class="section-subtitle">
-            Academic background and achievements.
+            Academic background and performance.
         </p>
 
         <div class="education-grid">
@@ -712,13 +813,13 @@
                 <h2>Delhi Public School, Vasant Kunj</h2>
 
                 <p>
-                    CBSE Class 12th - <strong>93%</strong>
+                    Class 12th - <strong>93%</strong>
                 </p>
 
                 <br>
 
                 <p>
-                    CBSE Class 10th - <strong>97%</strong>
+                    Class 10th - <strong>97%</strong>
                 </p>
 
             </div>
@@ -732,11 +833,11 @@
     <section id="skills">
 
         <h2 class="section-title">
-            Skills & Expertise
+            Skills & Technologies
         </h2>
 
         <p class="section-subtitle">
-            Technologies and domains I actively work with.
+            Technologies, frameworks, and domains I actively work with.
         </p>
 
         <div class="skills-grid">
@@ -745,11 +846,12 @@
 
                 <i class="fa-solid fa-brain"></i>
 
-                <h3>Artificial Intelligence</h3>
+                <h3>Generative AI</h3>
 
                 <p>
-                    LLMs, RAG, AI Agents, NLP,
-                    Transformers, LangChain, Prompt Engineering.
+                    LLMs, RAG Pipelines, LangChain,
+                    AI Agents, Prompt Engineering,
+                    Vector Databases.
                 </p>
 
             </div>
@@ -761,9 +863,9 @@
                 <h3>Data Science</h3>
 
                 <p>
-                    Predictive Analytics, ML/DL,
-                    Data Processing, Feature Engineering,
-                    Time-Series Forecasting.
+                    Predictive Analytics, Machine Learning,
+                    Deep Learning, NLP,
+                    Data Processing & Visualization.
                 </p>
 
             </div>
@@ -776,7 +878,8 @@
 
                 <p>
                     Python, SQL, C++, Flask,
-                    Streamlit, APIs, Automation.
+                    Streamlit, APIs,
+                    Backend Development.
                 </p>
 
             </div>
@@ -788,8 +891,9 @@
                 <h3>Big Data</h3>
 
                 <p>
-                    Spark, PySpark, Hadoop,
-                    ETL Pipelines, Data Engineering.
+                    Apache Spark, Hadoop,
+                    PySpark, ETL Pipelines,
+                    Data Warehousing.
                 </p>
 
             </div>
@@ -798,11 +902,13 @@
 
                 <i class="fa-solid fa-chart-simple"></i>
 
-                <h3>Analytics</h3>
+                <h3>Analytics & BI</h3>
 
                 <p>
-                    Tableau, Power BI,
-                    Dashboarding & Visualization.
+                    Power BI, Tableau,
+                    Dashboarding,
+                    Data Visualization,
+                    Reporting Systems.
                 </p>
 
             </div>
@@ -814,9 +920,10 @@
                 <h3>Cybersecurity</h3>
 
                 <p>
-                    Vulnerability Assessment,
                     Penetration Testing,
-                    SQLMap, Burp Suite, Wireshark.
+                    Vulnerability Assessment,
+                    Burp Suite,
+                    SQLMap & Wireshark.
                 </p>
 
             </div>
@@ -834,8 +941,8 @@
         </h2>
 
         <p class="section-subtitle">
-            Internships and professional work in AI, Data Science,
-            and intelligent systems.
+            Internships and professional experiences across AI, Data Science,
+            Analytics, and Intelligent Systems.
         </p>
 
         <div class="timeline">
@@ -851,9 +958,46 @@
                 <br><br>
 
                 <p>
-                    Built RAG pipelines, AI SQL agents,
-                    and invoice intelligence systems for
-                    enterprise automation workflows.
+                    Built AI-powered invoice intelligence systems,
+                    AI SQL agents, and enterprise RAG pipelines
+                    for intelligent automation workflows.
+                </p>
+
+            </div>
+
+            <div class="timeline-item">
+
+                <h3>Yellow.ai</h3>
+
+                <span>
+                    AI & Automation Intern
+                </span>
+
+                <br><br>
+
+                <p>
+                    Worked on conversational AI workflows,
+                    automation systems,
+                    chatbot integrations,
+                    and enterprise AI solutions.
+                </p>
+
+            </div>
+
+            <div class="timeline-item">
+
+                <h3>Tech Mahindra</h3>
+
+                <span>
+                    AI/Data Science Intern
+                </span>
+
+                <br><br>
+
+                <p>
+                    Worked on AI-based analytics workflows,
+                    data engineering,
+                    and intelligent automation systems.
                 </p>
 
             </div>
@@ -870,8 +1014,8 @@
 
                 <p>
                     Analysed large datasets using Hadoop & Spark,
-                    developed dashboards,
-                    and automated analytical workflows.
+                    built dashboards,
+                    and automated data analytics workflows.
                 </p>
 
             </div>
@@ -889,7 +1033,7 @@
                 <p>
                     Conducted penetration testing,
                     vulnerability assessments,
-                    and web security analysis.
+                    and web application security analysis.
                 </p>
 
             </div>
@@ -907,11 +1051,13 @@
         </h2>
 
         <p class="section-subtitle">
-            AI systems, GenAI applications,
-            and intelligent solutions.
+            AI systems, machine learning applications,
+            intelligent automation tools, and enterprise solutions.
         </p>
 
         <div class="projects-grid">
+
+            <!-- PROJECT 1 -->
 
             <div class="glass-card project-card">
 
@@ -921,22 +1067,34 @@
 
                 <div class="project-content">
 
-                    <h3>AI Learning Assistant</h3>
+                    <h3>AI Storytelling with Groq</h3>
 
                     <p>
-                        AI-powered educational assistant using NLP,
-                        Transformers, and intelligent tutoring systems.
+                        AI-powered storytelling platform capable of generating
+                        dynamic stories using GenAI and LLMs.
                     </p>
 
                     <div class="project-tags">
-                        <span>Transformers</span>
-                        <span>NLP</span>
+                        <span>Groq</span>
+                        <span>LLMs</span>
                         <span>GenAI</span>
+                    </div>
+
+                    <div class="project-links">
+
+                        <a href="https://github.com/yashgupta67/AI-Storytelling-with-Groq"
+                            target="_blank"
+                            class="github-btn">
+                            GitHub
+                        </a>
+
                     </div>
 
                 </div>
 
             </div>
+
+            <!-- PROJECT 2 -->
 
             <div class="glass-card project-card">
 
@@ -949,19 +1107,31 @@
                     <h3>AI Invoice Intelligence System</h3>
 
                     <p>
-                        Intelligent invoice extraction and retrieval system
-                        using OCR and RAG pipelines.
+                        Intelligent invoice extraction and RAG-based retrieval
+                        system using OCR and AI pipelines.
                     </p>
 
                     <div class="project-tags">
                         <span>RAG</span>
                         <span>OCR</span>
-                        <span>LLMs</span>
+                        <span>AI Agents</span>
+                    </div>
+
+                    <div class="project-links">
+
+                        <a href="https://github.com/yashgupta67"
+                            target="_blank"
+                            class="github-btn">
+                            GitHub
+                        </a>
+
                     </div>
 
                 </div>
 
             </div>
+
+            <!-- PROJECT 3 -->
 
             <div class="glass-card project-card">
 
@@ -971,22 +1141,34 @@
 
                 <div class="project-content">
 
-                    <h3>Finance AI Assistant</h3>
+                    <h3>CO2 Emissions Predictor</h3>
 
                     <p>
-                        AI-powered stock market assistant using
-                        LangChain, FAISS, and financial APIs.
+                        Machine learning web application for predicting
+                        CO2 emissions using multiple environmental parameters.
                     </p>
 
                     <div class="project-tags">
-                        <span>LangChain</span>
-                        <span>Finance</span>
+                        <span>Machine Learning</span>
+                        <span>Flask</span>
                         <span>AI</span>
+                    </div>
+
+                    <div class="project-links">
+
+                        <a href="https://github.com/yashgupta67/CO2-emissions-predictor-webpage"
+                            target="_blank"
+                            class="github-btn">
+                            GitHub
+                        </a>
+
                     </div>
 
                 </div>
 
             </div>
+
+            <!-- PROJECT 4 -->
 
             <div class="glass-card project-card">
 
@@ -999,14 +1181,98 @@
                     <h3>AI SQL Agent</h3>
 
                     <p>
-                        Intelligent AI SQL assistant capable of converting
-                        natural language into SQL queries.
+                        Intelligent SQL assistant capable of converting
+                        natural language into executable SQL queries.
                     </p>
 
                     <div class="project-tags">
                         <span>SQL</span>
                         <span>LLMs</span>
-                        <span>AI Agents</span>
+                        <span>LangChain</span>
+                    </div>
+
+                    <div class="project-links">
+
+                        <a href="https://github.com/yashgupta67"
+                            target="_blank"
+                            class="github-btn">
+                            GitHub
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- PROJECT 5 -->
+
+            <div class="glass-card project-card">
+
+                <div class="project-image">
+                    <i class="fa-solid fa-kitchen-set"></i>
+                </div>
+
+                <div class="project-content">
+
+                    <h3>Pantry Tracker</h3>
+
+                    <p>
+                        Smart inventory management system with
+                        analytics, tracking, and AI-ready architecture.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>Next.js</span>
+                        <span>Firebase</span>
+                        <span>Analytics</span>
+                    </div>
+
+                    <div class="project-links">
+
+                        <a href="https://github.com/yashgupta67/pantry_tracker"
+                            target="_blank"
+                            class="github-btn">
+                            GitHub
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- PROJECT 6 -->
+
+            <div class="glass-card project-card">
+
+                <div class="project-image">
+                    <i class="fa-solid fa-user-graduate"></i>
+                </div>
+
+                <div class="project-content">
+
+                    <h3>Rate My Prof</h3>
+
+                    <p>
+                        Professor review platform enabling
+                        students to review and analyze professors.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>Web App</span>
+                        <span>Analytics</span>
+                        <span>Database</span>
+                    </div>
+
+                    <div class="project-links">
+
+                        <a href="https://github.com/yashgupta67/Rate-my-prof"
+                            target="_blank"
+                            class="github-btn">
+                            GitHub
+                        </a>
+
                     </div>
 
                 </div>
@@ -1017,20 +1283,47 @@
 
     </section>
 
+    <!-- CONTACT -->
+
+    <section id="contact">
+
+        <div class="contact-box">
+
+            <h2 class="section-title">
+                Let's Connect
+            </h2>
+
+            <p class="section-subtitle">
+                Open to AI Engineering, GenAI, Data Science,
+                and Machine Learning opportunities and collaborations.
+            </p>
+
+            <div class="hero-buttons"
+                style="justify-content:center; margin-top:40px;">
+
+                <a href="mailto:yash9910340792@gmail.com"
+                    class="btn primary-btn">
+                    Contact Me
+                </a>
+
+                <a href="RESUME_YASHG.pdf"
+                    target="_blank"
+                    class="btn secondary-btn">
+                    Download Resume
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
     <!-- FOOTER -->
 
-    <footer id="contact">
+    <footer>
 
-        <h2>
-            Let's Connect
-        </h2>
-
-        <p>
-            Interested in collaborating on AI, GenAI,
-            Data Science, or Machine Learning projects?
-        </p>
-
-        <div class="socials">
+        <div class="socials"
+            style="justify-content:center;">
 
             <a href="https://github.com/yashgupta67"
                 target="_blank">
@@ -1059,7 +1352,7 @@
 
     </footer>
 
-    <!-- LOTTIE SCRIPT -->
+    <!-- LOTTIE -->
 
     <script>
 
