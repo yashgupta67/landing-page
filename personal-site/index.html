@@ -75,24 +75,58 @@
             top: 0;
             left: 0;
             z-index: 1000;
-            padding: 20px 10%;
-            backdrop-filter: blur(15px);
-            background: rgba(5, 8, 22, 0.75);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+
+            padding: 18px 8%;
 
             display: flex;
             justify-content: space-between;
             align-items: center;
+
+            background: rgba(5, 8, 22, 0.75);
+            backdrop-filter: blur(15px);
+
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .nav-left {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+        }
+
+        .header-lottie {
+            width: 75px;
+            height: 75px;
+        }
+
+        .coffee-box {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background: rgba(255, 255, 255, 0.06);
+
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .coffee-box i {
+            color: #8b5cf6;
+            font-size: 1rem;
         }
 
         .logo {
-            font-size: 1.4rem;
+            font-size: 1.3rem;
             font-weight: 700;
         }
 
         .nav-links {
             display: flex;
-            gap: 30px;
+            align-items: center;
+            gap: 28px;
         }
 
         .nav-links a {
@@ -100,50 +134,10 @@
             color: #dbe4f0;
             transition: 0.3s;
             font-size: 0.95rem;
+            font-weight: 500;
         }
 
         .nav-links a:hover {
-            color: #8b5cf6;
-        }
-
-        /* FLOATING HEADER */
-
-        .floating-animation {
-            position: fixed;
-            top: 90px;
-            right: 40px;
-            z-index: 999;
-
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
-
-        .floating-lottie {
-            width: 120px;
-            height: 120px;
-            border-radius: 24px;
-
-            background: rgba(255, 255, 255, 0.04);
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            backdrop-filter: blur(12px);
-        }
-
-        .coffee-box {
-            width: 55px;
-            height: 55px;
-            border-radius: 50%;
-
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.08);
-        }
-
-        .coffee-box i {
-            font-size: 1.3rem;
             color: #8b5cf6;
         }
 
@@ -153,8 +147,8 @@
             min-height: 100vh;
 
             display: flex;
-            align-items: center;
             justify-content: space-between;
+            align-items: center;
 
             gap: 70px;
         }
@@ -186,7 +180,7 @@
             color: #dbe4f0;
             line-height: 2;
             margin-bottom: 40px;
-            max-width: 750px;
+            max-width: 700px;
             font-size: 1.05rem;
         }
 
@@ -347,7 +341,7 @@
             color: #cbd5e1;
         }
 
-        /* EDUCATION */
+        /* EDUCATION / SKILLS / PROJECTS */
 
         .education-grid,
         .skills-grid,
@@ -362,8 +356,6 @@
             color: #8b5cf6;
             margin-bottom: 20px;
         }
-
-        /* SKILLS */
 
         .skill-card i {
             font-size: 2rem;
@@ -395,7 +387,6 @@
         .timeline-item span {
             color: #8b5cf6;
             font-weight: 600;
-            font-size: 0.95rem;
         }
 
         /* PROJECTS */
@@ -495,8 +486,8 @@
                 height: 420px;
             }
 
-            .floating-animation {
-                display: none;
+            .navbar {
+                padding: 18px 5%;
             }
 
         }
@@ -510,32 +501,32 @@
 
     <nav class="navbar">
 
-        <div class="logo">
-            Yash Gupta
+        <div class="nav-left">
+
+            <div id="header-lottie" class="header-lottie"></div>
+
+            <div class="coffee-box">
+                <i class="fa-solid fa-mug-saucer"></i>
+            </div>
+
+            <div class="logo">
+                Yash Gupta
+            </div>
+
         </div>
 
         <div class="nav-links">
+
             <a href="#about">About</a>
             <a href="#education">Education</a>
             <a href="#skills">Skills</a>
             <a href="#experience">Experience</a>
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
+
         </div>
 
     </nav>
-
-    <!-- FLOATING HEADER -->
-
-    <div class="floating-animation">
-
-        <div id="floating-lottie" class="floating-lottie"></div>
-
-        <div class="coffee-box">
-            <i class="fa-solid fa-mug-saucer"></i>
-        </div>
-
-    </div>
 
     <!-- HERO -->
 
@@ -599,8 +590,6 @@
         <div class="hero-image">
 
             <div class="hero-card">
-
-                <!-- REPLACE WITH YOUR IMAGE -->
 
                 <img src="photos/img1.png"
                     alt="Yash Gupta">
@@ -1028,40 +1017,6 @@
 
     </section>
 
-    <!-- STATS -->
-
-    <section>
-
-        <h2 class="section-title">
-            Achievements
-        </h2>
-
-        <div class="stats-grid">
-
-            <div class="glass-card stat-card">
-                <h2>5+</h2>
-                <p>Internships</p>
-            </div>
-
-            <div class="glass-card stat-card">
-                <h2>15+</h2>
-                <p>AI Projects</p>
-            </div>
-
-            <div class="glass-card stat-card">
-                <h2>3</h2>
-                <p>Research Papers</p>
-            </div>
-
-            <div class="glass-card stat-card">
-                <h2>8.47</h2>
-                <p>CGPA</p>
-            </div>
-
-        </div>
-
-    </section>
-
     <!-- FOOTER -->
 
     <footer id="contact">
@@ -1104,13 +1059,13 @@
 
     </footer>
 
-    <!-- LOTTIE -->
+    <!-- LOTTIE SCRIPT -->
 
     <script>
 
         lottie.loadAnimation({
 
-            container: document.getElementById('floating-lottie'),
+            container: document.getElementById('header-lottie'),
 
             renderer: 'svg',
 
